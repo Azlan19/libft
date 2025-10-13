@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 09:23:56 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/13 09:30:39 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/13 15:58:37 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,13 @@ RETURN VALUES
 
 void* ft_memset(void *b, int c, size_t len)
 {
-    
+    size_t i;
+
+    i =  0;
+    while(i < len)
+    {
+        b = c;
+    }
 }
 
 int main()
