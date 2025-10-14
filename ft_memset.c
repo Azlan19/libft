@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 09:23:56 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/14 13:21:14 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/14 13:53:29 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,19 @@ RETURN VALUES
 void* ft_memset(void *b, int c, size_t len)
 {
     unsigned char *ptr;
-    ptr = b;
-    while(len--)
+    size_t i;
+
+
+    ptr = (unsigned char *)b;
+    
+
+    i = 0;
+    while(i < len)
     {
-        *ptr = (unsigned char)c;
-        ptr++;
+        ptr[i] = c;
+        i++;
     }
-    return b;
+    return ptr;
 }
 
 // #include <stdio.h>
