@@ -20,7 +20,8 @@ vpath %.c $(SRC_DIRS)
 ###############                  SOURCE FILES                     ##############
 ################################################################################
 
-SRCS := ft_isalpha.c ft_isalnum.c ft_isdigit.c
+SRCS := ft_isalpha.c ft_isalnum.c ft_isdigit.c ft_calloc.c
+
 
 BONUS_SRCS :=
 

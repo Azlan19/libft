@@ -9,5 +9,7 @@
 
 
 int	ft_isalpha(int c);
+void *ft_calloc(size_t nmemb, size_t size);
+
 
 #endif
