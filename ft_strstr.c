@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 16:50:46 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/15 16:59:15 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/18 17:48:35 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,15 +24,30 @@ RETURN VALUE
 
 #include "libft.h"
 
-char *ft_strstr(const char *haystack, const char *needle)
+char	*ft_strstr(const char *haystack, const char *needle)
 {
-    int i;  
-    int j;
-    
-    i = 0;
-    while(haystack[i])
-    {
-        j = 0;
-        
-    }
+	int		i;
+	int		j;
+	const char	*ptr;
+
+	ptr = 0;
+	if (*needle == '\0')
+	{
+		return (haystack);
+	}
+	i = 0;
+	while (haystack[i] != '\0')
+	{
+		j = 0;
+		while (haystack[i + j] == needle[j])
+		{
+			if (needle[j + 1] == 0)
+			{
+				return (haystack + i);
+			}
+			j++;
+		}
+		i++;
+	}
+	return (ptr);
 }
