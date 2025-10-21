@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 13:54:27 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/21 14:56:39 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/21 16:43:24 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,23 @@ size_t ft_strlen(const char *s)
     return i;
 }
 
+int trim(char c, char const *set)
+{
+    int i;
+
+    i = 0;
+    while(set[i])
+    {
+        if (c == set[i])
+        {
+            return 1;
+        }
+        i++;
+    } 
+    return 0;
+}
+
+
 
 
 
@@ -47,52 +64,54 @@ char *ft_strtrim(char const *s1, char const *set)
     char *ptr;
     int i;
     int j;
-    // int first_index;
-    // int last_index;
+    int n;
     int length;
 
     ptr = NULL;
     length = ft_strlen(s1);
 
     i = 0;
-    j = 0;
-
-    while(s1[i])
+    while (trim(s1[i], set))
     {
-        j = 0;
-        while(set[j])
-        {
-            if (set[j] == s1[i])
-            {
-                i++;
-                break;
-            }
-            j++;
-        }
+        i++;
+    }
+    j = length - 1;
+    while (trim(s1[j], set))
+    {
+        j--;
+    }
+    if (length <= 0 || i >= length)
+    {
+        return NULL;
     }
 
-    printf("i = %d\n", i);
-    printf("j = %d\n", j);
-    printf("length = %d\n", length);
+    ptr = (char *)malloc((j - i) * sizeof(char));
 
-    
+    if (!ptr)
+    {
+        return NULL;
+    }
+    n = 0;
+    while(i <= j)
+    {
+        ptr[n++] = s1[i++];
+    }
+    ptr[n] = '\0';
     return ptr;
 }
 
-int main()
-{
-    char *s1 = "ababaaaMy name is Simonbbaaabbab";
-    char *set = "ab";
+// int main()
+// {
+//     char *s1 = "ababaaaMy name is Simonbbaaabbab";
+//     char *set = "ab";
 
-    ft_strtrim(s1, set);
-
-    // printf("\nBEFORE\n");
-    // printf("s1 = '%s'\n", s1);
-    // printf("set = [%s]\n", set);
+//     printf("\nBEFORE\n");
+//     printf("s1 = '%s'\n", s1);
+//     printf("set = [%s]\n", set);
     
-    // printf("\nAFTER\n");
-    // printf("ft_strtrim = '%s'\n\n", ft_strtrim(s1, set));
+//     printf("\nAFTER\n");
+//     printf("ft_strtrim = '%s'\n\n", ft_strtrim(s1, set));
 
-    return 0;
+//     return 0;
     
-}
+// }
