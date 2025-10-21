@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 21:34:10 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/12 17:49:47 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/21 13:57:10 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,14 @@ int ft_isaplha(int c)
     return 1;
 }
 
-#include <stdio.h>
-int main()
-{
-    printf("%i\n", ft_isaplha('A'));
-    printf("%i\n", ft_isaplha('Z'));
-    printf("%i\n", ft_isaplha('a'));
-    printf("%i\n", ft_isaplha('z'));
-    printf("%i\n", ft_isaplha('1'));
+// #include <stdio.h>
+// int main()
+// {
+//     printf("%i\n", ft_isaplha('A'));
+//     printf("%i\n", ft_isaplha('Z'));
+//     printf("%i\n", ft_isaplha('a'));
+//     printf("%i\n", ft_isaplha('z'));
+//     printf("%i\n", ft_isaplha('1'));
 
-    return 0;
-}
+//     return 0;
+// }
