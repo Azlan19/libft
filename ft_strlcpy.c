@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 13:26:50 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 11:26:34 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 11:52:09 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,18 @@
 	designed to be safer, more consistent, and less error prone replacements for
 	strncpy(3) and strncat(3). Unlike those functions, strlcpy() takes the full
 	size of the buffer (not just the length) and guarantees to NUL-terminate the
-	result (as long as size is larger than 0.  Note that a byte for the NUL should
-	be included in size. Also note that strlcpy() only operates on true “C” strings.
-	This means that for strlcpy() src must be NUL-terminated and for strlcat() both
-	src and dst must be NUL-terminated.
+	result (as long as size is larger than 0.  Note that a byte for the NUL
+    should be included in size. Also note that strlcpy() only operates on true
+    “C” strings. This means that for strlcpy() src must be NUL-terminated and
+    for strlcat() both src and dst must be NUL-terminated.
 
-	The strlcpy() function copies up to size
-		- 1 characters from the NUL-terminated
-	string src to dst, NUL-terminating the result.
+	The strlcpy() function copies up to size - 1 characters from the
+    NUL-terminated string src to dst, NUL-terminating the result.
 
 
 RETURN VALUES
-	The strlcpy() and strlcat() functions return the total length of the string they tried
-	to create.  For strlcpy() that means the length of src.
+	The strlcpy() and strlcat() functions return the total length of the string
+    they tried to create. For strlcpy() that means the length of src.
 
 */
 

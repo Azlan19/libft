@@ -6,12 +6,12 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/11 22:04:43 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 11:25:21 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 11:45:21 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isaplha();
-int	ft_isdigit();
+int	ft_isaplha(int c);
+int	ft_isdigit(int c);
 
 int	ft_isalnum(int c)
 {

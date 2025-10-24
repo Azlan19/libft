@@ -6,14 +6,14 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 13:22:18 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 11:24:36 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 11:39:26 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*DESCRIPTION
 	The bzero() function erases the data in the n bytes of the memory starting at
-	the location pointed to by s,
-		by writing zeros (bytes containing '\0') to that area.
+	the location pointed to by s, by writing zeros (bytes containing '\0') to
+    that area.
 
 RETURN VALUE
 	None.

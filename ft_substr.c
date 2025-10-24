@@ -6,14 +6,15 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 20:19:10 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 11:26:54 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 11:52:55 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 DESCRIPTION
-	Allocates memory (using malloc(3)) and returns a substring from the string ’s’.
-	The substring starts at index ’start’ and has a maximum length of ’len’.
+	Allocates memory (using malloc(3)) and returns a substring from the
+    string ’s’. The substring starts at index ’start’ and has a maximum length
+    of ’len’.
 
 RETURN VALUE
 	The substring. NULL if the allocation fails.
