@@ -6,30 +6,28 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 20:59:26 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/22 21:06:42 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 11:26:12 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 DESCRIPTION
-    Outputs the integer ’n’ to the specified file
-    descriptor.
+	Outputs the integer ’n’ to the specified file
+	descriptor.
 
 RETURN VALUE
-    None.
+	None.
 */
-
-
 
 #include "libft.h"
 #include <unistd.h>
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
-    char nbr;
+	char	nbr;
 
-    nbr = 0;
-    if (n == -2147483648)
+	nbr = 0;
+	if (n == -2147483648)
 	{
 		write(fd, "-2147483648", 11);
 		return ;
@@ -43,7 +41,13 @@ void ft_putnbr_fd(int n, int fd)
 	{
 		ft_putnbr_fd(n / 10, fd);
 	}
-    nbr = (n % 10) + '0';
-    write(fd, &nbr, 1);
+	nbr = (n % 10) + '0';
+	write(fd, &nbr, 1);
 }
 
+// int main()
+// {
+// 	ft_putnbr_fd(-76543, 1);
+
+// 	return (0);
+// }

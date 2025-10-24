@@ -6,92 +6,81 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 17:53:41 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/14 18:36:42 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 11:07:43 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*DESCRIPTION
-    The atoi() function converts the initial portion of the string pointed to
-    by nptr to int.  The behavior is the same as strtol(nptr, NULL, 10);
+	The atoi() function converts the initial portion of the string pointed to
+	by nptr to int.  The behavior is the same as strtol(nptr, NULL, 10);
 
-    except that atoi() does not detect errors.
+	except that atoi() does not detect errors.
 
 RETURN VALUE
-    The converted value or 0 on error.
+	The converted value or 0 on error.
 */
-
 
 #include "libft.h"
 
-int ft_isspace(const char c)
+int	ft_isspace(const char c)
 {
-    if (c == '\f' || c == '\n' || c == '\r'|| c == '\t'|| c == '\v' || c == ' ')
-    {
-        return 1;
-    }
-    
-    return 0;
+	if (c == '\f' || c == '\n' || c == '\r' || c == '\t' || c == '\v'
+		|| c == ' ')
+	{
+		return (1);
+	}
+	return (0);
 }
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
-    if(c < 48 || 57 < c)
-    {
-        return 0;
-    }
-
-    return 1;
+	if (c < 48 || 57 < c)
+	{
+		return (0);
+	}
+	return (1);
 }
 
-
-int ft_atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
-    int i;
-    int sign;
-    int num;
-    
-    num = 0;
+	int	i;
+	int	sign;
+	int	num;
 
-    i = 0;
-    sign = 1;
-
-    while (ft_isspace(nptr[i]))
-    {
-        i++;
-    }
-    if ((nptr[i] == '+' || nptr[i] == '-'))
-    {
-        if (nptr[i] == '-')
-        {
-            sign = -sign;
-        }
-        i++;
-    }
-    while (ft_isdigit(nptr[i]))
-    {
-        num = (num * 10) + (nptr[i] - '0');
-        i++;    
-    }
-
-    
-    return num * sign;
-    
+	num = 0;
+	i = 0;
+	sign = 1;
+	while (ft_isspace(nptr[i]))
+	{
+		i++;
+	}
+	if ((nptr[i] == '+' || nptr[i] == '-'))
+	{
+		if (nptr[i] == '-')
+		{
+			sign = -sign;
+		}
+		i++;
+	}
+	while (ft_isdigit(nptr[i]))
+	{
+		num = (num * 10) + (nptr[i] - '0');
+		i++;
+	}
+	return (num * sign);
 }
-
-
 
 // int main()
 // {
 //     char *string = "     -123s56          ";
-    
+
 //     printf("%d\n", ft_atoi(string));
 
-//     return 0;
+//     return (0);
 // }
 
 // #include <stdio.h>
 // #include <stdlib.h>
-
 
 // int	main(void)
 // {
@@ -128,5 +117,5 @@ int ft_atoi(const char *nptr)
 // 		i++;
 // 	}
 
-// 	return 0;
+// 	return (0);
 // }

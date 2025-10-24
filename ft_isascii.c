@@ -6,16 +6,15 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/12 19:27:08 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/12 19:36:08 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 11:25:49 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
-    if (0 <= c && c <= 127)
-    {
-        return 1;   
-    }
-
-    return 0;
+	if (0 <= c && c <= 127)
+	{
+		return (1);
+	}
+	return (0);
 }

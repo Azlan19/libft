@@ -6,16 +6,15 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/12 19:37:09 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/12 19:55:59 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 11:25:43 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int isprint(int c)
+int	isprint(int c)
 {
-    if (32 <= c && c <= 126)
-    {
-        return 1;
-    }
-
-    return 0;
+	if (32 <= c && c <= 126)
+	{
+		return (1);
+	}
+	return (0);
 }
