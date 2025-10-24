@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 20:19:10 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 11:52:55 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 16:25:53 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,18 +21,6 @@ RETURN VALUE
 */
 
 #include "libft.h"
-
-int	ft_strlen(char const *s)
-{
-	int	i;
-
-	i = 0;
-	while (s[i])
-	{
-		i++;
-	}
-	return (i);
-}
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

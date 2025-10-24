@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 16:46:31 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 12:50:10 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 16:29:03 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,25 +38,6 @@ long long	ft_intlen(long long n)
 		count++;
 	}
 	return (count);
-}
-
-void	*ft_calloc(size_t nmemb, size_t size)
-{
-	size_t			i;
-	unsigned char	*ptr;
-
-	ptr = (unsigned char *)malloc(nmemb * size);
-	i = 0;
-	if (!ptr || nmemb == 0 || size == 0)
-	{
-		return (NULL);
-	}
-	while (i < nmemb * size)
-	{
-		ptr[i] = 0;
-		i++;
-	}
-	return (ptr);
 }
 
 char	*ft_itoa(int n)

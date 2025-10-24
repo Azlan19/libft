@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 17:53:41 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 11:07:43 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 16:28:37 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,15 +30,6 @@ int	ft_isspace(const char c)
 		return (1);
 	}
 	return (0);
-}
-
-int	ft_isdigit(int c)
-{
-	if (c < 48 || 57 < c)
-	{
-		return (0);
-	}
-	return (1);
 }
 
 int	ft_atoi(const char *nptr)

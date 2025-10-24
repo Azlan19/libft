@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 14:22:17 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 11:51:17 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 16:24:05 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,17 +42,6 @@ RETURN VALUES
 */
 
 #include "libft.h"
-
-size_t	ft_strlen(const char *c)
-{
-	size_t	i;
-
-	while (c[i])
-	{
-		i++;
-	}
-	return (i);
-}
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

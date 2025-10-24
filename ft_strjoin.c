@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 10:44:18 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 11:26:29 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 16:23:52 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,23 +23,11 @@ RETURN VALUE
 
 #include "libft.h"
 
-int	ft_strlen(char const *s)
-{
-	int	i;
-
-	i = 0;
-	while (s[i])
-	{
-		i++;
-	}
-	return (i);
-}
-
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int		i;
-	int		j;
-	int		total_length;
+	size_t	i;
+	size_t	j;
+	size_t	total_length;
 	char	*ptr;
 
 	total_length = ft_strlen(s1) + ft_strlen(s2);

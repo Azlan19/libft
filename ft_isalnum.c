@@ -6,14 +6,11 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/11 22:04:43 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 13:11:36 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 16:28:50 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_isaplha(int c);
-int	ft_isdigit(int c);
 
 int	ft_isalnum(int c)
 {
