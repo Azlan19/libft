@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 13:54:27 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 11:26:52 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 12:54:00 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,28 +63,18 @@ char	*ft_strtrim(char const *s1, char const *set)
 	length = ft_strlen(s1);
 	i = 0;
 	while (trim(s1[i], set))
-	{
 		i++;
-	}
 	j = length - 1;
 	while (trim(s1[j], set))
-	{
 		j--;
-	}
 	if (length <= 0 || i >= length)
-	{
 		return (NULL);
-	}
 	ptr = (char *)malloc((j - i) * sizeof(char));
 	if (!ptr)
-	{
 		return (NULL);
-	}
 	n = 0;
 	while (i <= j)
-	{
 		ptr[n++] = s1[i++];
-	}
 	ptr[n] = '\0';
 	return (ptr);
 }
