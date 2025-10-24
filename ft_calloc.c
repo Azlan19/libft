@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 19:55:20 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 11:39:39 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 12:47:30 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 
 	ptr = (unsigned char *)malloc(nmemb * size);
 	i = 0;
-	if (!ptr[i] || nmemb == 0 || size == 0)
+	if (!ptr || nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
