@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 14:46:03 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 11:26:23 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 18:36:20 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,13 +34,13 @@ char	*ft_strchr(const char *s, int c)
 	{
 		if (s[i] == (char)c)
 		{
-			return (&s[i]);
+			return ((char *)&s[i]);
 		}
 		i++;
 	}
 	if (s[i] == (char)c)
 	{
-		return (&s[i]);
+		return ((char *)&s[i]);
 	}
 	return (NULL);
 }
