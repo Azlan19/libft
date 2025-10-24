@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:11:08 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 17:44:13 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 20:00:49 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,31 @@ RETURN VALUE
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	(void)dest;
-	(void)src;
-	(void)n;
-	return (NULL);
+	size_t			i;
+	unsigned char	*src_temp;
+	unsigned char	*dest_temp;
+
+	if (!dest && !src)
+		return (NULL);
+	src_temp = (unsigned char *)src;
+	dest_temp = (unsigned char *)dest;
+	if (src < dest)
+	{
+		while (n-- > 0)
+		{
+			dest_temp[n] = src_temp[n];
+		}
+	}
+	else
+	{
+		i = 0;
+		while (i < n)
+		{
+			dest_temp[i] = src_temp[i];
+			i++;
+		}
+	}
+	return (dest);
 }
 
 // int	main(void)
