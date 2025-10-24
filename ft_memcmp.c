@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 18:11:17 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 11:41:22 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 20:37:57 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	s1_ptr = (unsigned char *)s1;
 	s2_ptr = (unsigned char *)s2;
 	i = 0;
-	while (i < n && (s1_ptr[i] || s2_ptr[i]))
+	while (i < n)
 	{
 		if (s1_ptr[i] != s2_ptr[i])
 		{

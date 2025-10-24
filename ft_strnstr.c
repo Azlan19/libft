@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 16:50:46 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 19:18:42 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 20:48:54 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,9 @@ RETURN VALUES
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t		i;
-	int			j;
-	const char	*ptr;
+	size_t	i;
+	int		j;
 
-	ptr = 0;
 	if (*little == '\0')
 	{
 		return ((char *)big);
@@ -41,9 +39,9 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	while (big[i] && i < len)
 	{
 		j = 0;
-		while (big[i + j] == little[j])
+		while (big[i + j] == little[j] && big[i + j] && (i + j < len))
 		{
-			if (little[j + 1] == 0)
+			if (little[j + 1] == '\0')
 			{
 				return ((char *)big + i);
 			}
@@ -51,5 +49,5 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		}
 		i++;
 	}
-	return ((char *)ptr);
+	return (NULL);
 }
