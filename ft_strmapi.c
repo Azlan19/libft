@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 18:26:04 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 11:52:18 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 18:41:48 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,7 @@ RETURN VALUE
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
+	(void)s;
+	(void)f;
+	return (NULL);
 }
