@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 16:50:46 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 19:13:04 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 19:18:42 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ RETURN VALUES
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	int			i;
+	size_t		i;
 	int			j;
 	const char	*ptr;
 
