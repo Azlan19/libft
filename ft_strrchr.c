@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 15:36:14 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 16:25:02 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 18:47:18 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,20 +27,20 @@ RETURN VALUE
 
 char	*ft_strrchr(const char *s, int c)
 {
-	size_t	size;
-	size_t	i;
+	int	size;
+	int	i;
 
 	size = ft_strlen(s);
 	if (s[size] == (char)c)
 	{
-		return (&s[size]);
+		return ((char *)&s[size]);
 	}
 	i = 0;
 	while ((size - 1 - i) >= 0)
 	{
 		if (s[size - 1 - i] == (char)c)
 		{
-			return (&s[size - 1 - i]);
+			return ((char *)&s[size - 1 - i]);
 		}
 		i++;
 	}
