@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 11:53:15 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 16:26:16 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 19:15:17 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,8 +48,8 @@ size_t		ft_strlcpy(char *dst, const char *src, size_t size);
 size_t		ft_strlen(const char *s);
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int			ft_strncmp(const char *s1, const char *s2, size_t n);
+char		*ft_strnstr(const char *big, const char *little, size_t len);
 char		*ft_strrchr(const char *s, int c);
-char		*ft_strstr(const char *haystack, const char *needle);
 char		*ft_strtrim(char const *s1, char const *set);
 int			trim(char c, char const *set);
 char		*ft_substr(char const *s, unsigned int start, size_t len);
