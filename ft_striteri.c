@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 19:28:19 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 19:29:47 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 19:32:44 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,4 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	(void)s;
 	(void)f;
-	return (NULL);
 }
