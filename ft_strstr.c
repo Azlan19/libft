@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 16:50:46 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 11:26:49 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 18:50:14 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strstr(const char *haystack, const char *needle)
 	ptr = 0;
 	if (*needle == '\0')
 	{
-		return (haystack);
+		return ((char *)haystack);
 	}
 	i = 0;
 	while (haystack[i] != '\0')
@@ -40,11 +40,11 @@ char	*ft_strstr(const char *haystack, const char *needle)
 		{
 			if (needle[j + 1] == 0)
 			{
-				return (haystack + i);
+				return ((char *)haystack + i);
 			}
 			j++;
 		}
 		i++;
 	}
-	return (ptr);
+	return ((char *)ptr);
 }
