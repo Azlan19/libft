@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 10:44:18 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 16:23:52 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 18:39:18 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	total_length = ft_strlen(s1) + ft_strlen(s2);
 	ptr = (char *)malloc((total_length * sizeof(char)) + 1);
 	if (!ptr)
-		i = 0;
+		return (NULL);
+	i = 0;
 	while (s1[i])
 	{
-		ptr[i++] = s1[i];
+		ptr[i] = s1[i];
+		i++;
 	}
 	j = 0;
 	while (s2[j])
