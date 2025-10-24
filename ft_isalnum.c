@@ -6,9 +6,11 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/11 22:04:43 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 11:45:21 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 13:11:36 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isaplha(int c);
 int	ft_isdigit(int c);
@@ -22,23 +24,23 @@ int	ft_isalnum(int c)
 	return (0);
 }
 
-int	ft_isaplha(int c)
-{
-	if ((c < 65 || c > 90) && (c < 97 || c > 122))
-	{
-		return (0);
-	}
-	return (1);
-}
+// int	ft_isaplha(int c)
+// {
+// 	if ((c < 65 || c > 90) && (c < 97 || c > 122))
+// 	{
+// 		return (0);
+// 	}
+// 	return (1);
+// }
 
-int	ft_isdigit(int c)
-{
-	if (c < 48 || 57 < c)
-	{
-		return (0);
-	}
-	return (1);
-}
+// int	ft_isdigit(int c)
+// {
+// 	if (c < 48 || 57 < c)
+// 	{
+// 		return (0);
+// 	}
+// 	return (1);
+// }
 
 // #include <stdio.h>
 // int main()
