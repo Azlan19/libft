@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 11:53:15 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 19:15:17 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 19:23:39 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void		*ft_memcpy(void *dest, const void *src, size_t n);
 void		*ft_memmove(void *dest, const void *src, size_t n);
 void		*ft_memset(void *b, int c, size_t len);
 void		ft_putchar_fd(char c, int fd);
-void		ft_putstr_fd(char *s, int fd);
+void		ft_putendl_fd(char *s, int fd);
 void		ft_putnbr_fd(int n, int fd);
 void		ft_putstr_fd(char *s, int fd);
 char		**ft_split(char const *s, char c);
