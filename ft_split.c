@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 16:44:52 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 11:48:31 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/24 17:45:02 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,11 @@ RETURN VALUE
 	NULL if the allocation fails.
 */
 
+#include "libft.h"
+
 char	**ft_split(char const *s, char c)
 {
+	(void)s;
+	(void)c;
+	return (NULL);
 }
