@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 13:54:27 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 16:25:25 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/25 18:29:42 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,23 +47,37 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		n;
 	int		length;
 
-	ptr = NULL;
+	if (!s1 || !set)
+	{
+		return (NULL);
+	}
 	length = ft_strlen(s1);
+	if (length <= 0)
+	{
+		return (NULL);
+	}
 	i = 0;
 	while (trim(s1[i], set))
+	{
 		i++;
+	}
+	if (i >= length)
+	{
+		return (NULL);
+	}
 	j = length - 1;
 	while (trim(s1[j], set))
+	{
 		j--;
-	if (length <= 0 || i >= length)
-		return (NULL);
-	ptr = (char *)malloc((j - i) * sizeof(char));
+	}
+	ptr = (char *)ft_calloc((j - i), sizeof(char));
 	if (!ptr)
 		return (NULL);
 	n = 0;
 	while (i <= j)
+	{
 		ptr[n++] = s1[i++];
-	ptr[n] = '\0';
+	}
 	return (ptr);
 }
 
