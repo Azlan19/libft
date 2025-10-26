@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 18:26:04 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/26 21:08:50 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/26 21:09:49 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,10 +52,11 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (ptr);
 }
 
-int	main(void)
-{
-	char	sentence[] = "Hello Wolrld";
+// int	main(void)
+// {
+// 	char	sentence[] = "Hello Wolrld";
 
-	printf("\n[Sentence = %s]\n", sentence);
-	printf("\n[strmapi  = %s]\n", ft_strmapi(sentence, function));
-}
+// 	printf("\n[Sentence = %s]\n", sentence);
+// 	printf("\n[strmapi  = %s]\n", ft_strmapi(sentence, function));
+// 	return (0);
+// }
