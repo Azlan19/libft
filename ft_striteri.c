@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 19:28:19 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 19:32:44 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/26 21:24:30 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,21 @@ RETURN VALUE
 
 #include "libft.h"
 
+void	function(unsigned int x, char *string)
+{
+	char	character;
+
+	character = string[x];
+}
+
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	(void)s;
-	(void)f;
+	unsigned int	i;
+
+	i = 0;
+	while (s[i])
+	{
+		f(i, &s[i]);
+		i++;
+	}
 }
