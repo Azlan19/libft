@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 12:41:23 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/27 12:54:18 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/27 14:37:56 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,6 @@ DESCRIPTION
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	(void)lst;
-	(void)new;
+	new->content = *lst;
+	*lst = new;
 }
