@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 16:46:31 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/27 09:54:02 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/27 09:59:30 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,15 +53,12 @@ char	*ft_itoa(int n)
 	if (!ptr)
 		return (NULL);
 	if (n == 0)
-	{
 		ptr[intlen - 1] = 0 + '0';
-		return (ptr);
-	}
 	sign = 0;
 	if (big_n < 0)
 	{
 		sign = 1;
-		big_n = -big_n;
+		ptr[0] = '-';
 	}
 	while (big_n > 0)
 	{
@@ -69,8 +66,6 @@ char	*ft_itoa(int n)
 		big_n = big_n / 10;
 		intlen--;
 	}
-	if (sign == 1)
-		ptr[intlen - 1] = '-';
 	return (ptr);
 }
 
