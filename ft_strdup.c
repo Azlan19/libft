@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 18:29:48 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 16:29:44 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/27 21:23:10 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,10 @@ char	*ft_strdup(const char *s)
 
 	len_s = ft_strlen(s);
 	ptr = (char *)malloc((len_s * sizeof(char)) + 1);
+	if (!ptr)
+	{
+		return (NULL);
+	}
 	i = 0;
 	while (s[i])
 	{
