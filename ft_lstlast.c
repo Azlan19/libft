@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 12:44:27 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/27 12:54:24 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/27 14:47:11 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,13 @@ RETURN VALUE
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	(void)lst;
-	return (NULL);
+	if (!lst)
+	{
+		return (NULL);
+	}
+	while (lst->next)
+	{
+		lst = lst->next;
+	}
+	return (lst);
 }
