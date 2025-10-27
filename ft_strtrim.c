@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 13:54:27 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/25 18:29:42 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/27 12:12:59 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,58 +41,52 @@ int	trim(char c, char const *set)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*ptr;
-	int		i;
-	int		j;
-	int		n;
-	int		length;
+	int	i;
+	int	j;
+	int	length;
 
 	if (!s1 || !set)
 	{
 		return (NULL);
 	}
 	length = ft_strlen(s1);
-	if (length <= 0)
+	if (length == 0)
 	{
-		return (NULL);
+		return (ft_strdup(""));
 	}
 	i = 0;
 	while (trim(s1[i], set))
 	{
 		i++;
 	}
-	if (i >= length)
-	{
-		return (NULL);
-	}
 	j = length - 1;
-	while (trim(s1[j], set))
+	while (trim(s1[j], set) && j >= 0)
 	{
 		j--;
 	}
-	ptr = (char *)ft_calloc((j - i), sizeof(char));
-	if (!ptr)
-		return (NULL);
-	n = 0;
-	while (i <= j)
-	{
-		ptr[n++] = s1[i++];
-	}
-	return (ptr);
+	return (ft_substr(s1, i, (j - i) + 1));
 }
 
-// int main()
+// ptr = (char *)ft_calloc((j - i), sizeof(char));
+// if (!ptr)
+// 	return (NULL);
+// n = 0;
+// while (i <= j)
 // {
-//     char *s1 = "ababaaaMy name is Simonbbaaabbab";
-//     char *set = "ab";
+// 	ptr[n++] = s1[i++];
+// }
 
-//     printf("\nBEFORE\n");
-//     printf("s1 = '%s'\n", s1);
-//     printf("set = [%s]\n", set);
+// int	main(void)
+// {
+// 	char	*s1;
+// 	char	*set;
 
-//     printf("\nAFTER\n");
-//     printf("ft_strtrim = '%s'\n\n", ft_strtrim(s1, set));
-
-//     return (0);
-
+// 	s1 = "ababaaaMy name is Simonbbaaabbab";
+// 	set = "ab";
+// 	printf("\nBEFORE\n");
+// 	printf("s1 = '%s'\n", s1);
+// 	printf("set = [%s]\n", set);
+// 	printf("\nAFTER\n");
+// 	printf("ft_strtrim = '%s'\n\n", ft_strtrim(s1, set));
+// 	return (0);
 // }
