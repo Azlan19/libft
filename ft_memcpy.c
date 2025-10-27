@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 14:05:40 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 11:47:19 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/27 20:59:56 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	const unsigned char	*src_temp;
 	unsigned char		*dest_temp;
 
-	if (dest == 0 || src == 0)
+	if (dest == src || n == 0)
 	{
 		return (dest);
 	}
