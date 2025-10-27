@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 12:46:02 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/27 14:58:38 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/27 19:08:24 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,17 @@ RETURN VALUE
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
+	t_list	*last;
+
 	if (!lst || !new)
 	{
-		return (NULL);
+		return ;
 	}
-	while ((*lst)->next)
+	if (!(*lst))
 	{
-		lst = (*lst)->next;
+		*lst = new;
+		return ;
 	}
-	(*lst)->content = new;
-	new->next = NULL;
+	last = ft_lstlast(*lst);
+	last->next = new;
 }
