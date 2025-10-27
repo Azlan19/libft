@@ -30,7 +30,8 @@ SRCS := \
 		ft_tolower.c ft_toupper.c
 
 
-BONUS_SRCS :=
+BONUS_SRCS := \
+		ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c
 
 SRCS += $(BONUS_SRCS)
 
