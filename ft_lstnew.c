@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 12:38:02 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/27 12:54:49 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/27 14:31:42 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,14 @@ RETURN VALUE
 
 t_list	*ft_lstnew(void *content)
 {
-	(void)content;
+	t_list *ptr;
+
+	ptr = (t_list*)malloc(sizeof(t_list));
+	if (!ptr)
+	{
+		return NULL;
+	}
+	ptr->content = content;
+	ptr->next = NULL;
 	return (NULL);
 }
