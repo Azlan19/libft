@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 17:53:15 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 20:35:59 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/27 21:20:48 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,21 +27,15 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	size_t			i;
 	unsigned char	*s_ptr;
 
-	if (n == 0)
-		return (NULL);
 	s_ptr = (unsigned char *)s;
 	i = 0;
 	while (i < n)
 	{
 		if (s_ptr[i] == (unsigned char)c)
 		{
-			return (&s_ptr[i]);
+			return ((void *)&s_ptr[i]);
 		}
 		i++;
-	}
-	if (s_ptr[i] == (unsigned char)c)
-	{
-		return (&s_ptr[i]);
 	}
 	return (NULL);
 }
