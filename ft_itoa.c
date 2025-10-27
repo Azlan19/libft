@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 16:46:31 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/27 10:04:48 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/27 21:58:01 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,17 @@ long long	ft_intlen(long long n)
 {
 	int	count;
 
-	count = 1;
+	count = 0;
+	if (n == 0)
+	{
+		return (1);
+	}
 	if (n < 0)
 	{
 		n = -n;
 		count++;
 	}
-	while (n > 10)
+	while (n > 0)
 	{
 		n = n / 10;
 		count++;
@@ -42,17 +46,17 @@ long long	ft_intlen(long long n)
 
 char	*ft_itoa(int n)
 {
-	long long	intlen;
+	int			intlen;
 	char		*ptr;
 	long long	big_n;
 
 	big_n = n;
 	intlen = ft_intlen(big_n);
-	ptr = (char *)ft_calloc(sizeof(char), intlen + 1);
+	ptr = (char *)ft_calloc(intlen + 1, sizeof(char));
 	if (!ptr)
 		return (NULL);
 	if (n == 0)
-		ptr[intlen - 1] = 0 + '0';
+		ptr[0] = '0';
 	if (big_n < 0)
 	{
 		big_n = -big_n;
@@ -60,9 +64,8 @@ char	*ft_itoa(int n)
 	}
 	while (big_n > 0)
 	{
-		ptr[intlen - 1] = (big_n % 10) + '0';
+		ptr[--intlen] = (big_n % 10) + '0';
 		big_n = big_n / 10;
-		intlen--;
 	}
 	return (ptr);
 }
@@ -72,8 +75,8 @@ char	*ft_itoa(int n)
 // 	long long	number;
 
 // 	// number = -123;
-// 	// number = -2147483648;
-// 	number = 0;
+// 	number = 1000034;
+// 	// number = 0;
 // 	printf("\n[NUMBER = %lld]\n", number);
 // 	printf("\n[STRING = %s]\n\n", ft_itoa(number));
 // 	return (0);
