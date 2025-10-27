@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 12:38:02 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/27 15:44:00 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/27 18:43:55 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,5 @@ t_list	*ft_lstnew(void *content)
 	}
 	ptr->content = content;
 	ptr->next = NULL;
-	return (NULL);
+	return (ptr);
 }
