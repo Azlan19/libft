@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 12:42:52 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/27 12:55:16 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/27 14:44:28 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,13 @@ RETURN VALUE
 
 int	ft_lstsize(t_list *lst)
 {
-	(void)lst;
-	return (0);
+	int	i;
+
+	i = 0;
+	while (lst)
+	{
+		lst = lst->next;
+		i++;
+	}
+	return (i);
 }
