@@ -1,30 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/27 12:38:02 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/27 12:54:49 by oazlan           ###   ########.fr       */
+/*   Created: 2025/10/27 12:41:23 by oazlan            #+#    #+#             */
+/*   Updated: 2025/10/27 12:54:18 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 DESCRIPTION
-	Allocates memory (using malloc(3)) and returns
-	a new node. The ’content’ member variable is
-	initialized with the given parameter ’content’.
-	The variable ’next’ is initialized to NULL.
+	Adds the node ’new’ at the beginning of the list.
 
-RETURN VALUE
-	A pointer to the new node.
+ RETURN VALUE
+	None.
 */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	(void)content;
-	return (NULL);
+	(void)lst;
+	(void)new;
 }

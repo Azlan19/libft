@@ -1,30 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/27 12:38:02 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/27 12:54:49 by oazlan           ###   ########.fr       */
+/*   Created: 2025/10/27 12:42:52 by oazlan            #+#    #+#             */
+/*   Updated: 2025/10/27 12:55:16 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 DESCRIPTION
-	Allocates memory (using malloc(3)) and returns
-	a new node. The ’content’ member variable is
-	initialized with the given parameter ’content’.
-	The variable ’next’ is initialized to NULL.
+	Counts the number of nodes in the list.
 
 RETURN VALUE
-	A pointer to the new node.
+	The length of the list.
 */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+int	ft_lstsize(t_list *lst)
 {
-	(void)content;
-	return (NULL);
+	(void)lst;
+	return (0);
 }
