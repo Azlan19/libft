@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 18:26:04 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/26 21:09:49 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/27 09:37:57 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ RETURN VALUE
 
 #include "libft.h"
 
-char	function(unsigned int x, char c)
-{
-	(void)x;
-	return (c);
-}
+// char	function(unsigned int x, char c)
+// {
+// 	(void)x;
+// 	return (c);
+// }
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
