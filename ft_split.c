@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 16:44:52 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/25 22:50:55 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/27 12:23:50 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,55 +60,52 @@ void	*free_everything(char **double_ptr, size_t words)
 	return (NULL);
 }
 
+char	*allocate_ptr(char const *s, int j)
+{
+	int		n;
+	char	*ptr;
+
+	ptr = (char *)ft_calloc(j + 1, sizeof(char));
+	if (!ptr)
+	{
+		return (NULL);
+	}
+	n = 0;
+	while (n < j)
+	{
+		ptr[n] = s[n];
+		n++;
+	}
+	return (ptr);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	size_t	i;
 	size_t	j;
-	size_t	n;
 	size_t	no_of_words;
 	char	**double_ptr;
-	char	*ptr;
 
 	no_of_words = count_words(s, c);
 	double_ptr = (char **)ft_calloc(no_of_words + 1, sizeof(char *));
 	if (!double_ptr)
-	{
 		return (NULL);
-	}
 	i = 0;
 	while (i < no_of_words)
 	{
 		while (*s == c && *s)
-		{
 			s++;
-		}
 		j = 0;
 		while (s[j] != c && s[j])
-		{
 			j++;
-		}
-		ptr = (char *)ft_calloc(j + 1, sizeof(char));
-		if (!ptr)
-		{
-			return (NULL);
-		}
-		n = 0;
-		while (n < j)
-		{
-			ptr[n] = s[n];
-			n++;
-		}
-		double_ptr[i] = ptr;
+		double_ptr[i] = allocate_ptr(s, j);
 		if (!double_ptr)
-		{
 			return (free_everything(double_ptr, i));
-		}
 		s = s + j;
 		i++;
 	}
 	return (double_ptr);
 }
-
 
 // int	main(void)
 // {
