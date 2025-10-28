@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 16:44:52 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/27 22:01:33 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/28 20:41:54 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,9 @@ int	count_words(char const *s, char c)
 
 	counter = 0;
 	i = 0;
-	if (s[i] != c && s[i])
-	{
-		counter++;
-	}
-	i++;
 	while (s[i])
 	{
-		if ((s[i] != c) && (s[i - 1] == c))
+		if (s[i] != c && (i == 0 || s[i - 1] == c))
 		{
 			counter++;
 		}
@@ -99,7 +94,7 @@ char	**ft_split(char const *s, char c)
 		while (s[j] != c && s[j])
 			j++;
 		double_ptr[i] = allocate_ptr(s, j);
-		if (!double_ptr)
+		if (!double_ptr[i])
 			return (free_everything(double_ptr, i));
 		s = s + j;
 		i++;
@@ -109,36 +104,27 @@ char	**ft_split(char const *s, char c)
 
 // int	main(void)
 // {
-// 	char	sentence[] = "    What a   wonderful world    ";
-// 	char	delimeter;
-
-// 	delimeter = ' ';
-// 	printf("\n[SENTENCE = %s]\n", sentence);
-// 	printf("\n[Number of words = %d]\n", count_words(sentence, delimeter));
-// 	return (0);
-// }
-
-// int	main(void)
-// {
 // 	char	**result;
-// 	char	str[] = "Hello world this is ft_split";
-// 	char	delimiter = ' ';
-// 	int		i = 0;
+// 	char	str[] = "\0aa\0bbb";
+// 	char	delimiter;
+// 	int		i;
 
+// 	delimiter = '\0';
+// 	i = 0;
+// 	printf("\n[SENTENCE = %s]\n", str);
+// 	printf("\n[Number of words = %d]\n", count_words(str, delimiter));
 // 	result = ft_split(str, delimiter);
 // 	if (!result)
 // 	{
 // 		printf("ft_split returned NULL\n");
 // 		return (1);
 // 	}
-
 // 	printf("Splitting \"%s\" by '%c'\n\n", str, delimiter);
 // 	while (result[i])
 // 	{
 // 		printf("result[%d] = \"%s\"\n", i, result[i]);
 // 		i++;
 // 	}
-
 // 	// Free memory after testing
 // 	i = 0;
 // 	while (result[i])
@@ -147,6 +133,5 @@ char	**ft_split(char const *s, char c)
 // 		i++;
 // 	}
 // 	free(result);
-
 // 	return (0);
 // }
