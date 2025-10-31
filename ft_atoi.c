@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 17:53:41 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/31 15:41:19 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/31 19:07:29 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,6 @@ int	ft_atoi(const char *nptr)
 // {
 //     char *string = "     -123s56          ";
 
-	
 //     printf("\n[STRING = %s]\n", string);
 //     printf("\n[ft_atoi = %d]\n\n", ft_atoi(string));
 
