@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 17:53:41 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 16:28:37 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/31 15:41:19 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,48 +65,9 @@ int	ft_atoi(const char *nptr)
 // {
 //     char *string = "     -123s56          ";
 
-//     printf("%d\n", ft_atoi(string));
+	
+//     printf("\n[STRING = %s]\n", string);
+//     printf("\n[ft_atoi = %d]\n\n", ft_atoi(string));
 
 //     return (0);
-// }
-
-// #include <stdio.h>
-// #include <stdlib.h>
-
-// int	main(void)
-// {
-// 	char *tests[] = {
-// 		"42",
-// 		"   -42",
-// 		" +123",
-// 		" 0042",
-// 		"0",
-// 		"-0",
-// 		"999999999",
-// 		"-999999999",
-// 		"   +21474836475",
-// 		"   -21474836485",
-// 		"abc123",
-// 		"123abc",
-// 		"",
-// 		NULL
-// 	};
-
-// 	int i = 0;
-// 	while (tests[i])
-// 	{
-// 		int std = atoi(tests[i]);
-// 		int mine = ft_atoi(tests[i]);
-
-// 		printf("Input: \"%s\"\n", tests[i]);
-// 		printf("atoi:    %d\n", std);
-// 		printf("ft_atoi: %d\n", mine);
-// 		if (std == mine)
-// 			printf("✅ Same result\n\n");
-// 		else
-// 			printf("❌ Different result\n\n");
-// 		i++;
-// 	}
-
-// 	return (0);
 // }
