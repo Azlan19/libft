@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 13:22:18 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 11:39:26 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/31 15:54:27 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,23 +35,20 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
-// #include <strings.h>
-
 // int main()
 // {
-//     char string_1[] = "Hello world";
-//     char string_2[] = "Hello world";
+//     char string[] = "Hello world";
+// 	size_t n = 3;
 
-//     printf("BEFORE:\n");
-//     printf("str1 = %s\n", string_1);
-//     printf("str2 = %s\n\n", string_2);
+//     printf("\nBEFORE :\n");
+//     printf("[STRING  = %s]\n", string);
+//     printf("[n bytes = %zu]\n", n);
 
-//     bzero(string_1, 2);
-//     ft_bzero(string_2, 2);
+//     ft_bzero(string, n);
 
-//     printf("AFTER:\n");
-//     printf("str1 = %s\n", string_1);
-//     printf("str2 = %s\n\n", string_2);
+//     printf("\nAFTER:\n");
+//     printf("[STRING = %s]\n\n", string);
+//     printf("[STRING + n bytes = %s]\n\n", string + n);
 
 //     return (0);
 // }
