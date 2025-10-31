@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 18:11:17 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 20:37:57 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/31 19:51:33 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,3 +47,25 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+
+// int main()
+// {
+// 	char string1[] = "Have a lAugh";
+// 	char string2[] = "Have a laugh";
+// 	size_t n_bytes = 9;
+
+	
+
+// 	printf("\nBEFORE:\n");
+// 	printf("[STRING_1     = %s]\n", string1);
+// 	printf("[STRING_2     = %s]\n", string2);
+// 	printf("[NO. OF BYTES = %zu]\n", n_bytes);
+
+// 	printf("\nAFTER:\n");
+// 	printf("[STRING = %d]\n\n", ft_memcmp(string1, string2, n_bytes));
+// 	printf("[int < 0]  means [string1 < string2]\n");
+// 	printf("[int == 0] means [string1 == string2]\n");
+// 	printf("[int > 0]  means [string1 > string2]\n\n");
+
+// 	return (0);
+// }
