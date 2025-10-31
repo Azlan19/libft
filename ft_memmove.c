@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:11:08 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 20:00:49 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/31 20:15:47 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,21 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-// int	main(void)
+// int main()
 // {
+// 	char dest[] = "What";
+// 	char src[] = "Phew";
+// 	size_t n_bytes = 4;
+
+// 	printf("\nBEFORE:\n");
+// 	printf("[DESTINATION  = %s]\n", dest);
+// 	printf("[SOURCE       = %s]\n", src);
+// 	printf("[NO. OF BYTES = %zu]\n", n_bytes);
+
+// 	printf("\nAFTER:\n");
+// 	printf("[ft_memmove   = %s]\n\n", (char *)ft_memmove(dest, src, n_bytes));
+// 	printf("[DESTINATION  = %s]\n", dest);
+// 	printf("[SOURCE       = %s]\n\n", src);
+
+// 	return (0);
 // }
