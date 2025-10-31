@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 16:46:31 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/27 21:58:01 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/31 19:13:56 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ char	*ft_itoa(int n)
 // 	// number = -123;
 // 	number = 1000034;
 // 	// number = 0;
-// 	printf("\n[NUMBER = %lld]\n", number);
-// 	printf("\n[STRING = %s]\n\n", ft_itoa(number));
+// 	printf("\n[NUMBER  = %lld]\n", number);
+// 	printf("\n[ft_itoa = %s]\n\n", ft_itoa(number));
 // 	return (0);
 // }
