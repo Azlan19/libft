@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/11 22:04:43 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/31 16:40:12 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/31 16:43:17 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ RETURN VALUES
 	The isalnum() function returns zero if the character tests false and
 	returns non-zero if the character tests true.
 */
-
 
 #include "libft.h"
 
