@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 17:53:15 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/27 21:20:48 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/10/31 19:37:47 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,20 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+
+// int	main(void)
+// {
+// 	char string[] = "Abracadabra";
+// 	char character = 'c';
+// 	size_t n_bytes = 5;
+
+// 	printf("\nBEFORE:\n");
+// 	printf("[STRING       = %s]\n", string);
+// 	printf("[SEARCH FOR   = '%c']\n", character);
+// 	printf("[NO. OF BYTES = %zu]\n", n_bytes);
+
+// 	printf("\nAFTER:\n");
+// 	printf("[STRING = %s]\n\n", (char *)ft_memchr(string, character, n_bytes));
+
+// 	return (0);
+// }
