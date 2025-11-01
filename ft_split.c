@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 16:44:52 by oazlan            #+#    #+#             */
-/*   Updated: 2025/11/01 01:57:22 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/11/01 02:50:01 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,15 +111,15 @@ char	**ft_split(char const *s, char c)
 
 // 	printf("\n[SENTENCE  = %s]\n", sentence);
 // 	printf("[DELIMETER = '%c']\n\n", delimiter);
-	
+
 // 	result = ft_split(sentence, delimiter);
-	
+
 // 	if (!result)
 // 	{
 // 		printf("ft_split returned NULL\n");
 // 		return (1);
 // 	}
-	
+
 // 	i = 0;
 // 	while (result[i])
 // 	{
@@ -127,7 +127,7 @@ char	**ft_split(char const *s, char c)
 // 		i++;
 // 	}
 // 	printf("\n");
-	
+
 // 	// Free memory after testing
 // 	i = 0;
 // 	while (result[i])
@@ -136,6 +136,6 @@ char	**ft_split(char const *s, char c)
 // 		i++;
 // 	}
 // 	free(result);
-	
+
 // 	return (0);
 // }
