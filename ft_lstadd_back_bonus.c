@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 12:46:02 by oazlan            #+#    #+#             */
-/*   Updated: 2025/11/01 03:33:03 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/11/01 03:36:52 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,8 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 // 	ft_lstadd_back(&list, node2);
 // 	ft_lstadd_back(&list, node3);
 
+// 	printf("\n");
+
 // 	int i = 1;
 // 	while (list)
 // 	{
@@ -55,5 +57,8 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 // 		list = list->next;
 // 		i++;
 // 	}
+
+// 	printf("\n");
+
 // 	return (0);
 // }
