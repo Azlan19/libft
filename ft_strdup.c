@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 18:29:48 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/27 21:23:10 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/11/01 02:09:51 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,3 +48,20 @@ char	*ft_strdup(const char *s)
 	ptr[i] = '\0';
 	return (ptr);
 }
+
+// int	main(void)
+// {
+// 	char string[] = "Abracadabra";
+// 	char *duplicate_string;
+
+// 	printf("\nBEFORE:\n");
+// 	printf("[STRING     = %s]\n", string);
+
+// 	duplicate_string = ft_strdup(string);
+
+// 	printf("\nAFTER STRDUP:");
+// 	printf("\n[STRING     = %s]\n", string);
+// 	printf("[DUP_STRING = %s]\n\n", duplicate_string);
+
+// 	return (0);
+// }
