@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 18:44:08 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 11:26:59 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/11/01 03:21:12 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,11 @@ int	ft_toupper(int c)
 
 // int main()
 // {
-//     char x = 'h';
+//     char c = 'h';
 
-//     printf("Before = %c\n", x);
-//     printf("After = %c\n\n", ft_toupper(x));
+//     printf("\n[CHARACTER  = %c]\n", c);
+
+//     printf("\n[ft_toupper = %c]\n\n", ft_toupper(c));
 
 //     return (0);
 // }
