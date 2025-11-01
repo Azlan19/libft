@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 20:19:10 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/25 22:22:32 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/11/01 03:13:11 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,3 +44,18 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	return (ptr);
 }
+
+// int main()
+// {
+// 	char string[] = "Abracadabra";
+// 	int start = 3;
+// 	size_t length = 6;
+
+// 	printf("\n[STRING  = %s]\n", string);
+// 	printf("[START   = %d]\n", start);
+// 	printf("[LENGTH  = %ld]\n", length);
+
+// 	printf("\n[ft_substr = %s]\n\n", ft_substr(string, start, length));
+
+// 	return (0);
+// }
