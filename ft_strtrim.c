@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 13:54:27 by oazlan            #+#    #+#             */
-/*   Updated: 2025/11/01 03:06:32 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/11/01 22:14:23 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ RETURN VALUE
 
 #include "libft.h"
 
-int	trim(char c, char const *set)
+static int	trim(char c, char const *set)
 {
 	int	i;
 

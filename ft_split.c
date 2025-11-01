@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 16:44:52 by oazlan            #+#    #+#             */
-/*   Updated: 2025/11/01 02:50:01 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/11/01 22:13:28 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ RETURN VALUE
 
 #include "libft.h"
 
-int	count_words(char const *s, char c)
+static int	count_words(char const *s, char c)
 {
 	int	i;
 	int	counter;
@@ -42,7 +42,7 @@ int	count_words(char const *s, char c)
 	return (counter);
 }
 
-void	*free_everything(char **double_ptr, size_t words)
+static void	*free_everything(char **double_ptr, size_t words)
 {
 	size_t	m;
 
@@ -55,7 +55,7 @@ void	*free_everything(char **double_ptr, size_t words)
 	return (NULL);
 }
 
-char	*allocate_ptr(char const *s, int j)
+static char	*allocate_ptr(char const *s, int j)
 {
 	int		n;
 	char	*ptr;

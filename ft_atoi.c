@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 17:53:41 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/31 19:07:29 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/11/01 22:11:31 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ RETURN VALUE
 
 #include "libft.h"
 
-int	ft_isspace(const char c)
+static int	ft_isspace(const char c)
 {
 	if (c == '\f' || c == '\n' || c == '\r' || c == '\t' || c == '\v'
 		|| c == ' ')

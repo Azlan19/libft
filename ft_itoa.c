@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 16:46:31 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/31 19:13:56 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/11/01 22:12:19 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ RETURN VALUE
 
 #include "libft.h"
 
-long long	ft_intlen(long long n)
+static long long	ft_intlen(long long n)
 {
 	int	count;
 
