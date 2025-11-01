@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 13:26:50 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 20:18:20 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/11/01 02:41:06 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,15 +57,17 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 
 // int main()
 // {
-//     char src[] = "";
-//     char dest[20];
+// 	char destination[] = "Wakanda";
+// 	char source[] = "Broomstick";
+// 	size_t n_bytes = 4;
 
-//     printf("src = %s\n", src);
-//     printf("dest = %s\n\n", dest);
+// 	printf("\n[DESTINATION = %s]\n", destination);
+// 	printf("[SOURCE = %s]\n", source);
+// 	printf("[n_bytes = %ld]\n", n_bytes);
 
-//     printf("size_t = %li\n", ft_strlcpy(dest, src, 9));
-//     printf("src = %s\n", src);
-//     printf("dest = %s\n\n", dest);
+// 	printf("\n[ft_strlcpy = %ld]\n", ft_strlcpy(destination, source, n_bytes));
+// 	printf("\n[DESTINATION = %s]\n", destination);
+// 	printf("[SOURCE = %s]\n\n", source);
 
-//     return (0);
+// 	return (0);
 // }
