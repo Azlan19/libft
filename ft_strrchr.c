@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 15:36:14 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 18:47:18 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/11/01 03:00:18 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,3 +46,18 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
+
+// int	main(void)
+// {
+// 	char string[] = "Abracadabra";
+// 	char character = 'b';
+
+// 	printf("\nBEFORE:\n");
+// 	printf("[STRING       = %s]\n", string);
+// 	printf("[SEARCH FOR   = '%c']\n", character);
+
+// 	printf("\nAFTER:\n");
+// 	printf("[ft_strrchr = %s]\n\n", ft_strrchr(string, character));
+
+// 	return (0);
+// }
