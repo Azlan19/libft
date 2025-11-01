@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 20:54:16 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 16:29:20 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/11/01 01:41:03 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,13 @@ void	ft_putendl_fd(char *s, int fd)
 	ft_putstr_fd(s, fd);
 	write(fd, "\n", 1);
 }
+
+// int main()
+// {
+// 	char string[] = "Good enough";
+// 	int file_descriptior = 1;
+
+// 	ft_putendl_fd(string, file_descriptior);
+
+// 	return (0);
+// }
