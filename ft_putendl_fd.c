@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 20:54:16 by oazlan            #+#    #+#             */
-/*   Updated: 2025/11/01 01:41:03 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/11/01 01:47:24 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,9 @@ void	ft_putendl_fd(char *s, int fd)
 // 	char string[] = "Good enough";
 // 	int file_descriptior = 1;
 
+// 	printf("\n");
 // 	ft_putendl_fd(string, file_descriptior);
+// 	printf("\n");
 
 // 	return (0);
 // }
