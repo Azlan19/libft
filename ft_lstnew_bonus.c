@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 12:38:02 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/27 19:09:09 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/11/01 03:55:17 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,29 @@ t_list	*ft_lstnew(void *content)
 	ptr->next = NULL;
 	return (ptr);
 }
+
+// int	main(void)
+// {
+// 	t_list *list = NULL;
+// 	t_list *node1 = ft_lstnew("Hello");
+// 	t_list *node2 = ft_lstnew("World");
+// 	t_list *node3 = ft_lstnew("!");
+
+// 	ft_lstadd_back(&list, node1);
+// 	ft_lstadd_back(&list, node2);
+// 	ft_lstadd_back(&list, node3);
+
+// 	printf("\n");
+
+// 	int i = 1;
+// 	while (list)
+// 	{
+// 		printf("[NODE_%d = '%s']\n", i, (char *)list->content);
+// 		list = list->next;
+// 		i++;
+// 	}
+
+// 	printf("\n");
+
+// 	return (0);
+// }
