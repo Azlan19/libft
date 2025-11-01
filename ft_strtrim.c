@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 13:54:27 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/27 12:12:59 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/11/01 03:06:32 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,26 +67,17 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (ft_substr(s1, i, (j - i) + 1));
 }
 
-// ptr = (char *)ft_calloc((j - i), sizeof(char));
-// if (!ptr)
-// 	return (NULL);
-// n = 0;
-// while (i <= j)
-// {
-// 	ptr[n++] = s1[i++];
-// }
-
 // int	main(void)
 // {
-// 	char	*s1;
-// 	char	*set;
+// 	char s1[] = "ababaaaMy name is Simonbbaaabbab";
+// 	char set[] = "ab";
 
-// 	s1 = "ababaaaMy name is Simonbbaaabbab";
-// 	set = "ab";
-// 	printf("\nBEFORE\n");
-// 	printf("s1 = '%s'\n", s1);
-// 	printf("set = [%s]\n", set);
-// 	printf("\nAFTER\n");
-// 	printf("ft_strtrim = '%s'\n\n", ft_strtrim(s1, set));
+// 	printf("\nBEFORE:\n");
+// 	printf("[s1 = '%s']\n", s1);
+// 	printf("[set = (%s)]\n", set);
+
+// 	printf("\nAFTER:\n");
+// 	printf("[ft_strtrim = '%s']\n\n", ft_strtrim(s1, set));
+
 // 	return (0);
 // }
