@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 20:59:26 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 16:21:46 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/11/01 01:44:00 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,12 @@ void	ft_putnbr_fd(int n, int fd)
 
 // int main()
 // {
-// 	ft_putnbr_fd(-76543, 1);
+// 	int number = -187654;
+// 	int file_descriptior = 1;
+
+// 	printf("\n");
+// 	ft_putnbr_fd(number, file_descriptior);
+// 	printf("\n\n");
 
 // 	return (0);
 // }
