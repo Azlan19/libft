@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 18:54:04 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 11:26:57 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/11/01 03:17:00 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,11 @@ int	ft_tolower(int c)
 
 // int main()
 // {
-//     char x = 'H';
+//     char c = 'H';
 
-//     printf("Before = %c\n", x);
-//     printf("After = %c\n\n", ft_tolower(x));
+//     printf("\n[CHARACTER  = %c]\n", c);
+
+//     printf("\n[ft_tolower = %c]\n\n", ft_tolower(c));
 
 //     return (0);
 // }
