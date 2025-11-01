@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 18:26:04 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/27 09:37:57 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/11/01 02:47:35 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,6 @@ RETURN VALUE
 */
 
 #include "libft.h"
-
-// char	function(unsigned int x, char c)
-// {
-// 	(void)x;
-// 	return (c);
-// }
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -52,11 +46,21 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (ptr);
 }
 
+// char	function(unsigned int x, char c)
+// {
+// 	if (x % 2 == 0)
+// 	{
+// 		return ('F');
+// 	}
+// 	return (c);
+// }
+
 // int	main(void)
 // {
 // 	char	sentence[] = "Hello Wolrld";
 
 // 	printf("\n[Sentence = %s]\n", sentence);
-// 	printf("\n[strmapi  = %s]\n", ft_strmapi(sentence, function));
+// 	printf("\n[strmapi  = %s]\n\n", ft_strmapi(sentence, function));
+
 // 	return (0);
 // }
