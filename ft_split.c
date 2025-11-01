@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 16:44:52 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/28 20:41:54 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/11/01 01:57:22 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,26 +105,29 @@ char	**ft_split(char const *s, char c)
 // int	main(void)
 // {
 // 	char	**result;
-// 	char	str[] = "\0aa\0bbb";
-// 	char	delimiter;
+// 	char	sentence[] = "I go to 42 Heilbronn and TUM";
+// 	char	delimiter = ' ';
 // 	int		i;
 
-// 	delimiter = '\0';
-// 	i = 0;
-// 	printf("\n[SENTENCE = %s]\n", str);
-// 	printf("\n[Number of words = %d]\n", count_words(str, delimiter));
-// 	result = ft_split(str, delimiter);
+// 	printf("\n[SENTENCE  = %s]\n", sentence);
+// 	printf("[DELIMETER = '%c']\n\n", delimiter);
+	
+// 	result = ft_split(sentence, delimiter);
+	
 // 	if (!result)
 // 	{
 // 		printf("ft_split returned NULL\n");
 // 		return (1);
 // 	}
-// 	printf("Splitting \"%s\" by '%c'\n\n", str, delimiter);
+	
+// 	i = 0;
 // 	while (result[i])
 // 	{
 // 		printf("result[%d] = \"%s\"\n", i, result[i]);
 // 		i++;
 // 	}
+// 	printf("\n");
+	
 // 	// Free memory after testing
 // 	i = 0;
 // 	while (result[i])
@@ -133,5 +136,6 @@ char	**ft_split(char const *s, char c)
 // 		i++;
 // 	}
 // 	free(result);
+	
 // 	return (0);
 // }
