@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 10:44:18 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 18:39:18 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/11/01 02:28:32 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,3 +48,16 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ptr[i] = '\0';
 	return (ptr);
 }
+
+// int main()
+// {
+// 	char string_1[] = "Wakanda";
+// 	char string_2[] = "Broomstick";
+
+// 	printf("\n[string_1 = %s]\n", string_1);
+// 	printf("[string_2 = %s]\n", string_2);
+
+// 	printf("\n[strjoin = %s]\n\n", ft_strjoin(string_1, string_2));
+
+// 	return (0);
+// }
