@@ -6,7 +6,7 @@
 /*   By: oazlan <oazlan@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 16:50:46 by oazlan            #+#    #+#             */
-/*   Updated: 2025/10/24 20:48:54 by oazlan           ###   ########.fr       */
+/*   Updated: 2025/11/01 02:58:01 by oazlan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,3 +51,19 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
+
+// int main()
+// {
+// 	char haystack[] = "Abadababongoman";
+// 	char needle[] = "ngo";
+// 	size_t n_bytes = 13;
+
+// 	printf("\n[HAYSTACK = %s]\n", haystack);
+// 	printf("[NEEDLE    = %s]\n", needle);
+// 	printf("[No. bytes   = %ld]\n", n_bytes);
+
+// 	printf("\n[ft_strnstr = %s]\n\n", ft_strnstr(haystack, needle, n_bytes));
+
+// 	return (0);
+
+// }
