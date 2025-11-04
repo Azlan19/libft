@@ -89,6 +89,8 @@ typedef struct s_list
 
 ## ⚙️ Makefile Commands
 
+These are the commands you can run in the terminal to compile, clean, and manage the Libft library:
+
 | Command | Description |
 |----------|-------------|
 | `make` | Compiles all mandatory functions and creates the `libft.a` static library. |
